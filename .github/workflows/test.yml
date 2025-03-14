@@ -7,11 +7,6 @@ on:
   pull_request:
     types: [opened, reopened, ready_for_review]
 
-  workflow_run:
-    workflows: ["Test Webhook"]
-    types:
-      - completed
-
 jobs:
   test:
     runs-on: ubuntu-latest
